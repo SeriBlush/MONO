@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23030" systemVersion="23A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES">
+        <attribute name="endTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="NO" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="startTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="subtasks" optional="YES" attributeType="Transformable" usesScalarValueType="NO"/>
+        <attribute name="title" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="CalendarEntryEntity" representedClassName="CalendarEntryEntity" syncable="YES">
+        <attribute name="date" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="title" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="FocusSessionEntity" representedClassName="FocusSessionEntity" syncable="YES">
+        <attribute name="duration" optional="NO" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="label" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="startTime" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="NoteEntity" representedClassName="NoteEntity" syncable="YES">
+        <attribute name="body" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="folder" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="TrackerEntity" representedClassName="TrackerEntity" syncable="YES">
+        <attribute name="entries" optional="YES" attributeType="Transformable" usesScalarValueType="NO"/>
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+        <attribute name="type" optional="NO" attributeType="String" usesScalarValueType="NO"/>
+    </entity>
+</model>
